@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Muhammad Gusti Nurfathin's Blog</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="base.css" rel="stylesheet">
+    </head>
+    <body class="d-flex flex-column min-vh-100 container">
+        <main role="main" class="flex-fill">
+            <div class="mt-1 text-center">
+                <h1 class="text-center">Gusti's Blog</h1>
+                <div class="mb-2">I write blog.</div>
+                <a href="index.html" class="link-primary mx-1">Home</a>
+                <a href="about_me.html" class="link-primary mx-1">About Me</a>
+            </div>
+            <hr class="my-4"/>
+            <div class="m-2 row">
+                <div class="col">
+                    <h3 class="mb-2">Apa Itu Basis Data?</h3>
+                    <span class="text-muted">Tuesday, 21 September 2021</span>
+                    <div class="py-2">
+                        <p>Sebelum kita mempelajari basis data, kita harus mengetahui terlebih dahulu apa arti dari data.</p>
+                        <p><i>Data</i> merupakan bentuk jamak dari <b>datum</b>, berasal dari bahasa Latin yang berarti "sesuatu yang diberikan". Data merupakan sekumpulan keterangan atau fakta yang dibuat dengan simbol, angka, kata-kata, maupun kalimat yang diperoleh lewat sebuah proses pencarian serta pengamatan berdasarkan sumber-sumber tertentu <sup><a href="#ref_note-1">[1]</a><a href="#ref_note-2">[2]</a></sup>. Data ini masih bersifat mentah, sehingga harus diolah menjadi bentuk lainnya yang lebih kompleks dan dapat menghasilkan informasi yang bisa dipahami dengan mudah.</p>
+                        <p>Data pada komputer dapat berupa sebuah berkas, gambar, teks, dan lain-lain yang disimpan secara digital dalam media elektronik seperti Hard Disk. Data ini dapat dibaca, ditulis, dan diubah oleh pengguna.</p>
+                        <figure class="figure mx-auto d-block col-sm-2 mb-4">
+                            <img src="assets/images/db.png" class="figure-img img-fluid" alt="Database">
+                            <figcaption class="figure-caption text-center">Basis data</figcaption>
+                        </figure>
+                        <p>Basis data adalah kumpulan data yang terorganisir yang dapat disimpan, diakses, dan dimanipulasi dalam komputer <sup><a href="#ref_note-3">[3]</a></sup>. Basis data sudah banyak digunakan dalam berbagai jenis aplikasi, mulai dari aplikasi sederhana, seperti aplikasi pengelolaan nomor telepon sampai dengan aplikasi kompleks, seperti aplikasi pembayaran gaji karyawan perusahaan.</p>
+                        <p>Menurut jenisnya, basis data dapat dibagi menjadi dua jenis, yaitu basis data flat-file dan basis data relasional <sup><a href="#ref_note-6">[6]</a></sup>.</p>
+                        <ul>
+                            <li>
+                                <p><b>Basis data flat-file</b></p>
+                                <p>Jenis basis data ini biasanya tersusun atas sekumpulan string dalam satu atau lebih file yang dapat diurai untuk mendapatkan informasi yang disimpan. Jenis basis data ini sangat baik digunakan untuk data yang berukuran kecil dan dapat diubah dengan mudah. Akan tetapi, basis data ini akan sangat rumit apabila digunakan untuk menyimpan data dengan struktur yang kompleks <sup><a href="#ref_note-6">[6]</a><a href="#ref_note-7">[7]</a></sup>.</p>
+                            </li>
+                            <li>
+                                <p><b>Basis data relasional</b></p>
+                                <p>Berbeda dengan basis data flat-file, basis data ini mempunyai struktur yang lebih logis terkait cara penyimpanannya. Kata "relasional" berasal dari kenyataan bahwa tabel-tabel yang ada di basis data relasional dihubungkan satu dengan lainnya. Basis data relasional menggunakan sekumpulan tabel dua dimensi yang masing-masing tabel tersusun atas baris (record) dan kolom (atribut). Untuk membuat hubungan antara dua atau lebih tabel, digunakan key (atribut kunci) yaitu primary key di salah satu tabel dan foreign key di tabel yang lain <sup><a href="#ref_note-6">[6]</a><a href="#ref_note-7">[7]</a></sup>.</p>
+                                <p>Saat ini, basis data relasional menjadi pilihan utama karena keunggulannya. Program aplikasi untuk mengakses basis data relasional menjadi lebih mudah dibuat dan dikembangkan dibandingkan dengan penggunaan basis data flat-file.</p>
+                                <p>Beberapa kekurangan yang mungkin dirasakan di basis data jenis ini adalah implementasi yang lebih sulit untuk data dalam jumlah besar dengan tingkat kompleksitasnya yang tinggi. Selain itu, proses pencarian informasi juga menjadi lebih lambat karena perlu menghubungkan tabel-tabel terlebih dahulu apabila datanya tersebar di beberapa tabel <sup><a href="#ref_note-6">[6]</a></sup>.</p>
+                            </li>
+                        </ul>
+                        <p>Bidang basis data memiliki terminologi sendiri. Istilah-istilah seperti tabel, atribut, baris, dan kunci utama memiliki arti khusus. Berikut adalah istilah-istilah pada basis data:</p>
+                        <figure class="figure mx-auto d-block col-sm-6 mb-4">
+                            <img src="assets/images/db_2.png" class="figure-img img-fluid" alt="Database">
+                            <figcaption class="figure-caption text-center">Istilah-istilah dalam Basis data</figcaption>
+                        </figure>
+                        <ul>
+                            <li>
+                                <p><b>Entitas (Tabel)</b></p>
+                                <p>Entititas adalah orang, tempat, kejadian atau konsep yang informasinya direkam. Misalnya, pada bidang kesehatan Entity adalah Pasien, Dokter, Kamar.</p>
+                            </li>
+                            <li>
+                                <p><b>Atribut (Field/kolom)</b></p>
+                                <p>Setiap entitas mempunyai atribut atau sebutan untuk mewakili suatu entitas. Misalnya, seorang siswa dapat dilihat dari atributnya misalnya, NIM, Nama_siswa, Alamat.</p>
+                            </li>
+                            <li>
+                                <p><b>Record (Baris)</b></p>
+                                <p>Record adalah kumpulan isi elemen data (atribut) yang saling berhubungan menginformasikan tentang suatu entity secara lengkap. Contoh Kumpulan atribut NIP, Nama, dan alamat berisikan “01001245566”, Sanusi, Jl. Hati suci No 2 Kupang.</p>
+                            </li>
+                            <li>
+                                <p><b>Nilai Data (Data Value)</b></p>
+                                <p>Merupakan data aktual atau infomasi yang disimpan ditiap data elemen. Isi atribut disebut nilai data.</p>
+                            </li>
+                            <li>
+                                <p><b>Field Kunci (Key Field)</b></p>
+                                <p>Tanda pengenal yang secara unik mengidentifikasikan entitas dari suatu kumpulan entitas. Contoh Entitas Mahasiswa yang mempunyai atribut-atribut npm, nama, alamat, tanggal lahir menggunakan field Kunci data npm.</p>
+                            </li>
+                        </ul>
+                        <p>Di dalam sebuah disk, kita dapat menempatkan beberapa (lebih dari satu) basis data. Sementara dalam sebuah basis data, kita dapat menempatkan satu atau lebih tabel. Pada tabel ini sesungguhnya data disimpan dan ditempatkan. Setiap basis data umumnya dibuat untuk mewakili sebuah semesta data yang spesifik. Misalnya ada basis data kepegawaian, basis data akademik, basis data inventori, dan sebagainya.</p>
+                        <p>Oleh sebab itu, diperlukan sebuah operasi-operasi dasar yang dapat kita lakukan untuk memanipulasi sebuah basis data. Berikut adalah operasi-operasi dasar yang dapat dilakukan pada basis data:</p>
+                        <ul>
+                            <li>Pembuatan basis data baru (<i>create database</i>).</li>
+                            <li>Penghapusan basis data (<i>drop database</i>).</li>
+                            <li>Pembuatan tabel baru ke suatu basis data (<i>create table</i>).</li>
+                            <li>Penghapusan tabel dari suatu basis data (<i>drop table</i>).</li>
+                            <li>Penambahan atau pengisian data baru ke sebuah tabel di sebuah basis data (<i>insert</i>).</li>
+                            <li>Pengambilan data dari sebuah tabel (<i>query</i>).</li>
+                            <li>Pengubahan data dari sebuah tabel (<i>update</i>).</li>
+                            <li>Penghapusan data dari sebuah tabel (<i>delete</i>).</li>
+                        </ul>
+                        <p>Basis data merupakan benda pasif dan tidak akan pernah berguna jika tidak ada yang mengelolanya. Yang dapat mengelola basis data itu sendiri adalah program/aplikasi (perangkat lunak). Pengguna dapat berinteraksi dengan basis data melalui sebuah perangkat lunak yang disebut <i>Database Management System</i> (DBMS). Interaksi tersebut dinamakan <b>Sistem Basis Data</b>, yang dimana pengguna dapat berinteraksi dengan basis data dengan aturan tertentu <sup><a href="#ref_note-4">[4]</a></sup>.</p>
+                        <p>Komponen-komponen sistem basis data:</p>
+                        <ul>
+                            <li>
+                                <b>Pengguna (user)</b>
+                                <p>Bagi pengguna dapat berinteraksi dengan basis data dan memanipulasi data dalam aplikasi yang ditulis dalam bahasa pemrograman.</p>
+                            </li>
+                            <li>
+                                <b>Sistem Pengolahan Basis Data (Database Management System)</b>
+                                <p>Pengolahan basis data secara fisik tidak dilakukan oleh pemakai secara langsung, tetapi ditangani oleh sebuah perangkat lunak yang disebut DBMS yang menentukan bagaimana data disimpan, diubah dan diambil kembali.</p>
+                            </li>
+                            <li>
+                                <b>Basis data</b>
+                                <p>Sebuah basis data yang digunakan dalam sistem.</p>
+                            </li>
+                        </ul>
+                        <p>Berikut tujuan dari basis data yaitu <sup><a href="#ref_note-5">[5]</a></sup>:</p>
+                        <ul>
+                            <li>Mengatur data agar dapat diakses, disimpan, dan dimanipulasi dengan mudah dan cepat.</li>
+                            <li>Menjaga konsistensi data agar tidak ada redundansi.</li>
+                            <li>Mengatur pemilahan data sesuai dengan fungsi dan jenisnya.</li>
+                        </ul>
+                        <p>Contoh pengaplikasian basis data dalam dunia bisnis:</p>
+                        <ul>
+                            <li>Bank : Pengelolaan data nasabah, akunting, semua transaksi perbankan</li>
+                            <li>Bandara : Pengelolaan data reservasi, penjadualan</li>
+                            <li>Universitas : Pengelolaan pendaftaran, alumni</li>
+                            <li>Penjualan : Pengelolaan data customer, produk, penjualan</li>
+                            <li>Pabrik : Pengelolaan data produksi, persediaan barang, pemesanan, agen</li>
+                            <li>Kepegawaian: Pengelolaan data karyawan, gaji, pajak</li>
+                            <li>Telekomunikasi : Pengelolaan data tagihan, jumlah pulsa</li>
+                        </ul>
+                    </div>
+                    <div class="py-2">
+                        <h5>References:</h5>
+                        <ol>
+                            <li id="ref_note-1"><a href="https://wageindicator-data-academy.org/countries/data-akademi-garmen-indonesia-bahasa/teknis-menganalisa-data-hasil-survei/pengertian-data">PENGANTAR DATA</a>. <i>WageIndicator Data Academy</i>. Retrieved 23 September 2021.</li>
+                            <li id="ref_note-2"><a href="https://idcloudhost.com/pengertian-data-definisi-fungsi-dan-jenis-jenis-data/">Pengertian Data : Definisi, Fungsi, dan Jenis-jenis Data</a>. <i>idCloudHost</i>. Retrieved 23 September 2021.</li>
+                            <li id="ref_note-3"><a href="https://www.dicoding.com/blog/apa-itu-database/">Apa itu Database?</a>. <i>dicoding</i>. Retrieved 23 September 2021.</li>
+                            <li id="ref_note-4"><a href="https://repository.nusamandiri.ac.id/index.php/unduh/item/227362/Modul-Sistem-Basis-Data.pdf">Modul Sistem Basis Data</a>. <i>STMIK Nusa Mandiri</i>. Retrieved 23 September 2021.</li>
+                            <li id="ref_note-5"><a href="http://informatika.unsyiah.ac.id/~viska/basisdata/Bab%201%20-%20KONSEP%20DASAR%20BASIS%20DATA.ppt#:~:text=KONSEP%20DASAR%20BASIS%20DATA&text=Basis%20data%20adalah%20kumpulan%20data,mudah%20untuk%20memenuhi%20berbagai%20kebutuhan.">KONSEP DASAR BASIS DATA</a>. <i>Informatika Unsyiah</i>. Retrieved 23 September 2021.</li>
+                            <li id="ref_note-6"><a href="https://www.termasmedia.com/lainnya/software/69-pengertian-database.html">Pengertian Database</a>. <i>TermasMedia</i>. Retrieved 23 September 2021.</li>
+                            <li id="ref_note-7"><a href="http://lancangkuning.com/post/31423/perbedaan-basis-data-flat-file-dan-basis-data-relasional.html">Perbedaan Basis Data Flat File dan Basis Data Relasional</a>. <i>Lancang Kuning</i>. Retrieved 23 September 2021.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <hr class="my-4"/>
+            <div class="m-2 row">
+                <div class="col">
+                    <h5>Contact Info</h5>
+                    <p class="text-break">Email: if20.muhammadnurfathin@mhs.ubpkarawang.ac.id</p>
+                </div>
+                <div class="col">
+                    <h5>Links</h5>
+                    <div class="vstack gap-1">
+                        <a href="https://ubpkarawang.ac.id/">UBP Karawang</a>
+                        <a href="https://github.com/gusti32">My Github</a>
+                        <a href="https://github.com/gusti32/gusti32.github.io">Blog Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4"/>
+            <div class="mb-4 text-center">Copyright (C) 2021 Muhammad Gusti Nurfathin</div>
+        </footer>
+    </body>
+</html>

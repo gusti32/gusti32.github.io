@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Muhammad Gusti Nurfathin's Blog</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="base.css" rel="stylesheet">
+    </head>
+    <body class="d-flex flex-column min-vh-100 container">
+        <main role="main" class="flex-fill">
+            <div class="mt-1 text-center">
+                <h1 class="text-center">Gusti's Blog</h1>
+                <div class="mb-2">I write blog.</div>
+                <a href="index.html" class="link-primary mx-1">Home</a>
+                <a href="about_me.html" class="link-primary mx-1">About Me</a>
+            </div>
+            <hr class="my-4"/>
+            <div class="m-2 row">
+                <div class="col">
+                    <h3 class="mb-2">Apa itu Conceptual DB?</h3>
+                    <span class="text-muted">Tuesday, 21 September 2021</span>
+                    <div class="py-2">
+                        <figure class="figure mx-auto d-block mb-4">
+                            <img src="assets/images/data_modeling.png" class="figure-img mx-auto d-block img-fluid" alt="Database">
+                            <figcaption class="figure-caption text-center">Pemodelan data</figcaption>
+                        </figure>
+                        <p>Pemodelan data adalah teknik untuk mendokumentasikan sistem perangkat lunak menggunakan diagram hubungan entitas (ER Diagram) yang merupakan representasi dari struktur data dalam sebuah tabel untuk database. Model data digunakan untuk banyak tujuan, dari model konseptual tingkat tinggi, logis hingga model data fisik dan biasanya diwakili oleh diagram hubungan entitas. Ini berfungsi sebagai panduan yang digunakan oleh analis basis data dan pengembang perangkat lunak dalam desain dan implementasi sistem dan basis data yang akan digunakan <sup><a href="#ref_note-1">[1]</a>.</p>
+                        <p>Pemodelan sebuah data ada 3 jenis, yaitu <i>conceptual</i>, <i>logical</i>, dan <i>physical</i>. Pada artikel ini kita akan fokus terhadap satu jenis yaitu jenis <i>conceptual</i>.</p>
+                        <p>Apa itu Conceptual Data Model? Conceptual Data Model adalah model data yang objek-objeknya harus ada dalam suatu sistem dan hubungan di antara mereka. Model konseptual dikembangkan untuk menyajikan gambaran keseluruhan sistem dengan mengenali objek bisnis yang terlibat. Model data ini mendefinisikan entitas apa yang ada, bukan tabel. Tujuan model data ini adalah untuk mengatur, memperluas dan mendefinisikan konsep dan aturan <sup><a href="#ref_note-1">[1]</a><a href="#ref_note-2">[2]</a></sup>. Dengan kata lain, model data ini hanya menjelaskan apa saja data yang akan disimpan di dalam basis data.</p>
+                        <p>Contoh desain conceptual data model:</p>
+                        <ol>
+                            <li>Data pegawai, berisi biodata pegawai.</li>
+                            <li>Data pesanan, berisi apa jenis furnitur yang dipesan dan deadline pengerjaannya.</li>
+                            <li>Data produksi, berisi pesanan apa yang diproduksi, siapa pegawai yang mengerjakan, tanggal produksi itu dikerjakan.</li>
+                        </ol>
+                    </div>
+                    <div class="py-2">
+                        <h5>References:</h5>
+                        <ol>
+                            <li id="ref_note-1"><a href="https://online.visual-paradigm.com/knowledge/visual-modeling/conceptual-vs-logical-vs-physical-data-model/">Data Modeling: Conceptual vs Logical vs Physical Data Model</a>. <i>VisualParadigm Online Documentation</i>. Retrieved 23 September 2021.</li>
+                            <li id="ref_note-2"><a href="https://anaktik.com/pemodelan-data/">Pengertian pemodelan data ciri, jenis, tekniknya</a>. <i>AnakTik.com</i>. Retrieved 23 September 2021.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <hr class="my-4"/>
+            <div class="m-2 row">
+                <div class="col">
+                    <h5>Contact Info</h5>
+                    <p class="text-break">Email: if20.muhammadnurfathin@mhs.ubpkarawang.ac.id</p>
+                </div>
+                <div class="col">
+                    <h5>Links</h5>
+                    <div class="vstack gap-1">
+                        <a href="https://ubpkarawang.ac.id/">UBP Karawang</a>
+                        <a href="https://github.com/gusti32">My Github</a>
+                        <a href="https://github.com/gusti32/gusti32.github.io">Blog Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4"/>
+            <div class="mb-4 text-center">Copyright (C) 2021 Muhammad Gusti Nurfathin</div>
+        </footer>
+    </body>
+</html>
